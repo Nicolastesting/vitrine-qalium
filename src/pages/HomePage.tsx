@@ -1,5 +1,6 @@
 import { CTASection } from "../components/sections/CTASection";
 import { BenefitsSection } from "../components/sections/BenefitsSection";
+import { DemoRunSimulator } from "../components/sections/DemoRunSimulator";
 import { FeatureGridSection } from "../components/sections/FeatureGridSection";
 import { HeroSection } from "../components/sections/HeroSection";
 import { PricingTeaser } from "../components/sections/PricingTeaser";
@@ -15,6 +16,7 @@ export function HomePage() {
       <ProductSnapshotSection />
       <FeatureGridSection />
       <WorkflowSection />
+      <DemoRunSimulator />
       <BenefitsSection />
       <PricingTeaser />
       <CTASection />

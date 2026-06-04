@@ -1,7 +1,7 @@
 import { heroSignals, siteConfig } from "../../data/site";
 import { Badge } from "../ui/Badge";
 import { ButtonLink } from "../ui/ButtonLink";
-import { QaliumConsole } from "./QaliumConsole";
+import { HeroDashboardPreview } from "./HeroDashboardPreview";
 
 export function HeroSection() {
   return (
@@ -10,7 +10,7 @@ export function HeroSection() {
       <div className="absolute inset-0 bg-[linear-gradient(rgba(255,255,255,0.035)_1px,transparent_1px),linear-gradient(90deg,rgba(255,255,255,0.035)_1px,transparent_1px)] bg-[size:72px_72px]" />
 
       <div className="relative mx-auto max-w-7xl px-4 py-14 sm:px-6 sm:py-16 lg:min-h-[600px] lg:px-8 lg:py-20">
-        <QaliumConsole className="pointer-events-none absolute right-[-320px] top-36 hidden w-[820px] opacity-75 xl:block 2xl:right-[-110px]" />
+        <HeroDashboardPreview className="pointer-events-none absolute right-[-250px] top-24 hidden w-[700px] opacity-90 xl:block 2xl:right-0" />
 
         <div className="relative max-w-2xl">
           <Badge tone="dark">Playwright · QA automation · TestOps</Badge>
@@ -48,7 +48,7 @@ export function HeroSection() {
           </div>
         </div>
 
-        <QaliumConsole className="mt-10 hidden md:block xl:hidden" />
+        <HeroDashboardPreview className="mt-10 md:max-w-3xl xl:hidden" />
       </div>
     </section>
   );
