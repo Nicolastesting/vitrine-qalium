@@ -31,7 +31,8 @@ export type IconName =
   | "team"
   | "pipeline"
   | "api"
-  | "trace";
+  | "trace"
+  | "ai";
 
 export const highlightFeatures: FeatureItem[] = [
   {
@@ -59,6 +60,13 @@ export const highlightFeatures: FeatureItem[] = [
     icon: "search",
   },
   {
+    title: "Résumés IA d'échecs",
+    description:
+      "Une aide de lecture future pour transformer logs et traces en hypothèses de diagnostic compréhensibles.",
+    icon: "ai",
+    status: "Roadmap",
+  },
+  {
     title: "Détection flaky tests",
     description:
       "Les instabilités récurrentes sont visibles avant qu'elles ne polluent toute la confiance QA.",
@@ -71,6 +79,12 @@ export const highlightFeatures: FeatureItem[] = [
       "Relier exigences, cas de tests, runs, bugs et rapports pour garder une mémoire exploitable.",
     icon: "trace",
     status: "Roadmap",
+  },
+  {
+    title: "Rapports partageables",
+    description:
+      "Transformer une campagne en synthèse lisible pour diffuser les preuves et conclusions à l'équipe.",
+    icon: "report",
   },
 ];
 

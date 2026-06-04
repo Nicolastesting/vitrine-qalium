@@ -31,3 +31,13 @@ textarea,
 select {
   font: inherit;
 }
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .text-pretty {
+    text-wrap: pretty;
+  }
+}

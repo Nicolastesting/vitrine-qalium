@@ -14,19 +14,24 @@ export function HeroSection() {
 
         <div className="relative max-w-2xl">
           <Badge tone="dark">Playwright · QA automation · TestOps</Badge>
-          <h1 className="mt-6 text-4xl font-semibold leading-tight sm:text-5xl 2xl:text-6xl">
+          <h1 className="mt-6 text-balance text-4xl font-semibold leading-tight sm:text-5xl 2xl:text-6xl">
             Qalium, le copilote QA qui transforme les runs Playwright en décisions claires.
           </h1>
-          <p className="mt-6 max-w-2xl text-lg leading-8 text-slate-200 sm:text-xl">
-            Centralisez vos campagnes, artefacts, historiques et diagnostics d'échecs pour
-            réduire le reporting manuel et accélérer les boucles QA/dev.
+          <p className="mt-6 max-w-2xl text-pretty text-lg leading-8 text-slate-200 sm:text-xl">
+            Centralisez campagnes, artefacts, logs et diagnostics d'échecs pour passer
+            plus vite du run Playwright au rapport partageable.
           </p>
 
           <div className="mt-8 flex flex-col gap-3 sm:flex-row">
-            <ButtonLink to="/contact" variant="dark" showIcon>
+            <ButtonLink to="/contact" variant="dark" className="w-full sm:w-auto" showIcon>
               {siteConfig.primaryCta}
             </ButtonLink>
-            <ButtonLink to="/fonctionnalites" variant="ghost" className="text-white hover:bg-white/10 hover:text-white" showIcon>
+            <ButtonLink
+              to="/fonctionnalites"
+              variant="ghost"
+              className="w-full text-white hover:bg-white/10 hover:text-white sm:w-auto"
+              showIcon
+            >
               {siteConfig.secondaryCta}
             </ButtonLink>
           </div>
@@ -41,7 +46,6 @@ export function HeroSection() {
               </span>
             ))}
           </div>
-
         </div>
 
         <QaliumConsole className="mt-10 hidden md:block xl:hidden" />

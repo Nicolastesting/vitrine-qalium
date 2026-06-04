@@ -31,13 +31,13 @@ export function SectionHeader({
       {eyebrow ? (
         <Badge tone={inverted ? "dark" : "success"}>{eyebrow}</Badge>
       ) : null}
-      <HeadingTag className="mt-5 text-3xl font-semibold leading-tight sm:text-4xl">
+      <HeadingTag className="mt-5 text-balance text-3xl font-semibold leading-tight sm:text-4xl">
         {title}
       </HeadingTag>
       {description ? (
         <p
           className={cn(
-            "mt-4 text-base leading-7 sm:text-lg",
+            "mt-4 text-pretty text-base leading-7 sm:text-lg",
             inverted ? "text-slate-200" : "text-slate-600",
           )}
         >

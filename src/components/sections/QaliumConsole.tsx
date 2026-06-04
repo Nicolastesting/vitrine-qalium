@@ -1,4 +1,11 @@
-import { Activity, CheckCircle2, Clock3, PlayCircle, XCircle } from "lucide-react";
+import {
+  Activity,
+  CheckCircle2,
+  Clock3,
+  PlayCircle,
+  Sparkles,
+  XCircle,
+} from "lucide-react";
 import { cn } from "../../lib/cn";
 
 type QaliumConsoleProps = {
@@ -131,6 +138,20 @@ export function QaliumConsole({ className }: QaliumConsoleProps) {
             <div className="mt-3 h-2 rounded-full bg-white/10">
               <div className="h-2 w-2/3 rounded-full bg-gradient-to-r from-teal-300 to-amber-300" />
             </div>
+          </div>
+          <div className="mt-3 rounded-lg border border-teal-200/20 bg-teal-300/10 p-3">
+            <div className="flex items-center justify-between gap-3 text-sm font-semibold text-white">
+              <span className="inline-flex items-center gap-2">
+                <Sparkles aria-hidden="true" size={16} />
+                Résumé IA
+              </span>
+              <span className="rounded-full border border-teal-200/20 px-2 py-0.5 text-[11px] text-teal-100">
+                roadmap
+              </span>
+            </div>
+            <p className="mt-2 text-xs leading-5 text-slate-300">
+              Hypothèse guidée à partir des logs, traces et derniers échecs similaires.
+            </p>
           </div>
         </section>
       </div>

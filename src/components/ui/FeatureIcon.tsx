@@ -14,6 +14,7 @@ import {
   Play,
   SearchCheck,
   ServerCog,
+  Sparkles,
   Users,
   Video,
 } from "lucide-react";
@@ -43,6 +44,7 @@ const iconMap = {
   pipeline: GitBranch,
   api: Braces,
   trace: Clock3,
+  ai: Sparkles,
 };
 
 export function FeatureIcon({ name, className }: FeatureIconProps) {

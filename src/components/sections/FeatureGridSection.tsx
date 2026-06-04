@@ -14,7 +14,7 @@ export function FeatureGridSection() {
           align="center"
         />
 
-        <div className="mt-12 grid gap-5 md:grid-cols-2 lg:grid-cols-3">
+        <div className="mt-12 grid gap-5 md:grid-cols-2 xl:grid-cols-4">
           {highlightFeatures.map((feature) => (
             <article
               key={feature.title}
